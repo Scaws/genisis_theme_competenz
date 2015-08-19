@@ -1,0 +1,152 @@
+/* 
+    Base Grid: Skeleton Modified 
+    Ararazu
+*/
+
+/* ====================================================== GRID ======================================================*/
+
+/* #1200px Default Grid */
+
+..sklt-container {
+  position: relative; 
+  width: 100%; 
+  max-width: 960px; 
+  margin: 0 auto; 
+  padding: 0 20px;
+  box-sizing: border-box; }
+.sklt-container .column,        
+.sklt-container .columns { 
+  width: 100%; 
+  float: left; 
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .sklt-container .container {
+    width: 85%;
+    padding: 0; }
+}
+
+@media (min-width: 550px) {
+	.sklt-container                                  { width: 100%; padding: 0 2%;}
+	.sklt-container .column,
+	.sklt-container .columns                         { margin-left: 4%; }
+	.sklt-container .column:first-child,        
+	.sklt-container .columns:first-child { 
+    margin-left: 0; }
+	.row                                             { margin-bottom: 20px; }
+
+	/* Nested Column Classes */
+	.column.alpha, .columns.alpha                    { margin-left: 0; }
+	.column.omega, .columns.omega                    { margin-right: 0; }
+
+	/* Base Grid */
+	.sklt-container .one.column,
+	.sklt-container .one.columns                     { width: 4.66666666667%;  }
+	.sklt-container .two.columns                     { width:  13.3333333333%; }
+	.sklt-container .three.columns                   { width: 22%;  }
+	.sklt-container .four.columns                    { width: 30.6666666667%; }
+	.sklt-container .five.columns                    { width: 39.3333333333%; }
+	.sklt-container .six.columns                     { width: 48%; }
+	.sklt-container .seven.columns                   { width: 56.6666666667%; }
+	.sklt-container .eight.columns                   { width: 63.3333333333%; }
+	.sklt-container .nine.columns                    { width: 61.3333333333%; }
+	.sklt-container .ten.columns                     { width: 61.3333333333%; }
+	.sklt-container .eleven.columns                  { width: 61.3333333333%; }
+	.sklt-container .twelve.columns                  { width: 61.3333333333%;  }
+	.sklt-container .thirteen.columns                { width: 100%; margin-left: 0; }
+	.sklt-container .fourteen.columns                { width: 100%; margin-left: 0; }
+	.sklt-container .fifteen.columns                 { width: 100%; margin-left: 0; }
+	.sklt-container .sixteen.columns                 { width: 100%; margin-left: 0; }
+	.sklt-container .full.columns                    { width: 100%; margin-left: 0; }
+
+	.sklt-container .one-third.column                { width: 30.6666666667%; }
+	.sklt-container .two-thirds.column               { width: 65.3333333333%; }
+
+	/* Offsets */
+	.sklt-container .offset-by-one                   { margin-left: 8.66666666667%;  }
+	.sklt-container .offset-by-two                   { margin-left: 17.3333333333%; }
+	.sklt-container .offset-by-three                 { margin-left: 26%; }
+	.sklt-container .offset-by-four                  { margin-left: 34.6666666667%; }
+	.sklt-container .offset-by-five                  { margin-left: 43.3333333333%; }
+	.sklt-container .offset-by-six                   { margin-left: 52%;  }
+	.sklt-container .offset-by-seven                 { margin-left: 60.6666666667%; }
+	.sklt-container .offset-by-eight                 { margin-left: 69.3333333333%; }
+	.sklt-container .offset-by-nine                  { margin-left: 78.0%; }
+	.sklt-container .offset-by-ten                   { margin-left: 86.6666666667%; }
+	.sklt-container .offset-by-eleven                { margin-left: 95.3333333333%; }
+	.sklt-container .offset-by-twelve                { margin-left: 95.3333333333%; }
+	.sklt-container .offset-by-thirteen              { margin-left: 95.3333333333%; }
+	.sklt-container .offset-by-fourteen              { margin-left: 95.3333333333%; }
+	.sklt-container .offset-by-fifteen               { margin-left: 95.3333333333%; }
+}
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .sklt-container:after { content: "";
+  display: table;
+  clear: both; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:after,
+    .row:after {
+      content: "";
+  display: table;
+  clear: both; }
+    .row:after,
+    .clearfix:after {
+      content: "";
+  display: table;
+  clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+
+/* =================================================== RESPONSIVE ===================================================*/
+    #loginContainer{
+        margin: 0 auto !important;
+    }
+    .loginbox form div.leftarea .inputarea div{
+        float: none !important;
+        margin-bottom: 5px !important;
+    }
+    .loginbox form div.leftarea .inputarea {
+        height: 120px !important;
+        margin-top: 0 !important;
+    }
+    .loginbox form div.leftarea a{
+        display: none !important;
+    }
+    .shadow2{
+        display: none !important;
+    }
+	
+	#loginContainer .loginbox form div.leftarea .inputarea div input[type="text"],
+	#loginContainer .loginbox form div.leftarea .inputarea div input[type="password"]{
+		width: 100%;
+	}
+	#loginContainer .loginbox,
+	#loginContainer .loginbox form{
+		width: 360px;
+	}
+	
+	@media (max-width: 380px){
+		#loginContainer .loginbox,
+		#loginContainer .loginbox form{
+			width: 300px;
+		}
+	}
+}
